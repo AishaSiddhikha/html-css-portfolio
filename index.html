@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"> </script>
+
+    <link rel="stylesheet" href="cv.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title> Personal Portfolio website </title>
+
+    <script src="https://kit.fontawesome.com/d782e27104.js" crossorigin="anonymous"></script>
+
+  </head>
+  
+  
+  <body>
+
+    <nav class="navbar" id="navbar">
+      <div class="max-width">
+        <div class="logo"> <a href="#">Portfo<span>lio. </span></a> </div>
+        <ul class="menu" id="sidemenu">
+          <li> <a href="#navbar"> Home </a> </li>
+          <li> <a href="#about"> About </a> </li>
+          <li> <a href="#services"> Services </a> </li>
+          <li> <a href="#portfolio"> Portfolio </a> </li>
+          <li> <a href="#contact"> Contact </a> </li>
+          <i class="fas fa-times" onclick="closemenu()" ></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()" ></i>
+      </div>
+    </nav>
+
+    <!--HOME SECTION STARTS -->
+
+    <div class="home" id="home">
+      <div class="max-width">
+        <div class="home-content">
+          <div class="text-1"> Hello, my name is </div>
+          <div class="text-2"> Aisha Siddhikha </div>
+          <div class="text-3"> And I'm a <span> Web designer </span> </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------------About-------------->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="photos/424977.thumbnail.jpg" class="profile-pic">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title"> About Me </h1>
+            <p> Hey there, I'm a passionate front-end developer who loves turning ideas into interactive digital experiences. With a creative mindset and a knack for coding, I'm dedicated to bringing design concepts to life in the browser.</p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')"> Skills </p>
+
+              
+              <p class="tab-links" onclick="opentab('experience')"> Experience </p>
+              <p class="tab-links" onclick="opentab('education')"> Education </p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li> <span>HTML</span><br>Proficiency in using HTML</li>
+                <li><span>CSS</span><br>To structure and style web page</li>
+                <li><span>JavaScript</span><br>Adding interactivity and dynamic elements to web pages.</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li> <span>2021 - current </span><br>Web designing </li>
+                <li><span>2017 - 2019 </span><br>Teaching </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li> <span>2011 - 2012</span><br>Bachelor of Education</li>
+                <li><span>2008 - 2011 </span><br>Bachelor of Science </li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------SERVICES----------->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title"> My Services </h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2> Web Design </h2>
+            <p> Build various user-friendly websites that align with clients' brand identity and target audience.</p>
+            <a href="#"> Learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-sharp fa-solid fa-crop"></i>
+            <h2> Responsive Design </h2>
+            <p> Ensure websites function and look great across various devices, screen sizes, and orientations.</p>
+            <a href="#"> Learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <h2> E-commerce Website </h2>
+            <p> Design and develop online stores with features like product catalogs, shopping carts, and secure payment gateways. </p>
+            <a href="#"> Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------PORTFOLIO----------->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title"> My Work </h1>
+        <div class="work-list"> 
+          <div class="work">
+            <img class="web" src="photos/My work(web).jpg">
+            <div class="layer">
+              <h3> Websites </h3>
+              <p> Created different websites with different styles using css.</p>
+              <a href="#"> <i class="fa-solid fa-up-right-from-square"></i> </a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img class="responsive" src="photos/mywork(responsive.png">
+
+            <div class="layer">
+              <h3> Responsive Websites </h3>
+              <p> Made websites function and look great across various devices, screen sizes, and orientations.</p>
+              <a href="#"> <i class="fa-solid fa-up-right-from-square"></i> </a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="photos/Ecommerce.jpg">
+
+            <div class="layer">
+              <h3>Online shopping Websites </h3>
+              <p> Created different e-commerce websites for online shopping.</p>
+              <a href="#"> <i class="fa-solid fa-up-right-from-square"></i> </a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn"> See more </a>
+      </div>
+    </div>
+
+
+    
+    <!------CONTACT-->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title"> Contact Me </h1>
+            <p> <i class="fa fa-paper-plane" aria-hidden="true"></i>rubiaish@gmail.com</p>
+            <p> <i class="fa fa-phone-square" aria-hidden="true"></i>090-8177-4477 </p>
+            
+            <div class="social-icons">
+              
+              <a href=""> <i class="fa fa-facebook-official" aria-hidden="true"></i> </a>
+
+              <a href=""> <i class="fa fa-instagram" aria-hidden="true"></i> </a>
+
+              <a href=""> <i class="fa fa-twitter-square" aria-hidden="true"></i> </a>
+
+              <a href=""> <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </div>
+
+            <a href="photos/AishaFEDresume.docx" download class="btn btn2"> Download CV </a>
+          </div>
+          
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+
+              <input type="email" name="Email" placeholder="Your Email" required>
+
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+
+              <button type="submit" class="btn btn2"> Submit </button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p> copyright @ Aisha </p>
+      </div>
+    </div>
+
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 500,
+        speedAsDuration: true});
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+
+    </script>
+    
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxxNmDdrrBemofVrD_BTFtNllDtlyGczbKzZGx8uW13pn_6zlPzu09QJD8UtNEu6k796w/exec'
+      const form = document.forms['submit-to-google-sheet']
+
+      const msg = document.getElementById("msg")
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+              msg.innerHTML = ""
+            },5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+
+  </body>
+</html>
